@@ -82,7 +82,7 @@ export const generateImageFromText = async (
   prompt: string
 ): Promise<EditedImageResult> => {
   try {
-        const apiKey = import.meta.env.VITE_GEMINI_API_KEY as string | undefined;
+        const apiKey = import.meta.env.GEMINI_API_KEY as string | undefined;
     if (!apiKey) {
       throw new Error("API_KEY environment variable not set");
     }
